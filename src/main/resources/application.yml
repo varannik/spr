@@ -23,6 +23,8 @@ spring:
             - Path=/api/voice/**
           filters:
             - StripPrefix=2
+    config:
+      enabled: false
   security:
     oauth2:
       client:
@@ -46,6 +48,7 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
 
 eureka:
   client:
